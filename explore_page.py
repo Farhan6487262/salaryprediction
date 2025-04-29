@@ -49,7 +49,7 @@ def load_data():
     df["YearsCodePro"] = df["YearsCodePro"].apply(clean_experience)
     df["EdLevel"] = df["EdLevel"].apply(clean_education)
     df = df.rename({"ConvertedComp": "Salary"}, axis=1)
-    
+    df = df[["Country", "EdLevel", "YearsCodePro", "Employment", "Salary"]]
     return df
 df = load_data()
 
