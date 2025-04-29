@@ -32,7 +32,7 @@ def clean_education(x):
 
 #df['EdLevel'] = df['EdLevel'].apply(clean_education) 
 
-@st.cache
+#@st.cache
 
 def load_data():
     df = pd.read_csv("survey_results_public.csv")
